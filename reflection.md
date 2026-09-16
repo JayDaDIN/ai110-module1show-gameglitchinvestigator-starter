@@ -5,8 +5,17 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 ## 1. What was broken when you started?
 
 - What did the game look like the first time you ran it?
+
+The game consisted of a plain awkward but simple interface with a title, short description, debug logger, a guess entry box, and options for "Submit Game" & New Game.
+Upon playing, it notified the user of their attempts and success. 
+
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
+
+  The difficulty modes are not good representation of scaling difficulties.
+  The New Game option doesn't actually start a new game.
+  The attempt tracker is glitchy and seemingly inaccurate to the number of actual attempts.
+  The number goes out of range from the game's scope
 
 **Bug Reproduction Log**
 
@@ -17,6 +26,13 @@ Document at least 3 bugs you found. Add rows as needed.
 | | | | |
 | | | | |
 | | | | |
+
+
+| Pressed New Game | Commence a new game with fresh attempts on user's preset difficulty |Changed the description a bit and reset difficulty back to Normal |Doesn't recognize or respect presets and no new functional game started |
+
+| A number higher than the scope |"number out of scope / go lower" | "Go Higher!" | Hints the user to go higher which is inaccurate |
+
+|Adjust difficulty |Game's scope adjust | Mixes ranges, attempts, or doesn't do anything at all | Game doesn't value difficulty presets |
 
 ---
 
