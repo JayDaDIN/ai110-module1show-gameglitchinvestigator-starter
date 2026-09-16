@@ -29,6 +29,9 @@ It wrote the code, ran away, and now the game is unplayable.
 - The main bugs we found were reversed hints, inconsistent secret-state handling across reruns, and difficulty settings that did not match the actual game range or attempts.
 - We fixed the logic by moving the core rules into `logic_utils.py`, correcting the comparison logic, resetting session state properly, and validating the behavior with pytest.
 
+# pytest -q
+# 3 passed in 0.03s
+
 ## Demo Walkthrough
 
 1. The user opens the app and selects the Normal difficulty, which sets the valid guess range to 1 to 100.
