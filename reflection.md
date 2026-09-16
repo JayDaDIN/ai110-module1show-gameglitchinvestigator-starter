@@ -74,11 +74,24 @@ Yes. The AI helped clarify the expected function contract for `check_guess()` by
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+I would explain Streamlit reruns and session state in this way:
+
+Session state is the current memory bubble / status of the website and what it currently holds. For example, if you run a website with Streamlit and input some information, it saves within the session state and won't go away unless you rerun the website.
+
+Reruns are the process are restarting an app by stopping and starting it back up which resets the app.
+
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
+
+I like the habit of timely pychecks / code checking. I believe during the development process, it's always good to continously check code to ensure functionality, and I want to implement this into future labs and or projects.
+
 - What is one thing you would do differently next time you work with AI on a coding task?
+
+Implement code checking intervals. I like having the model check the code after major development checkpoints.
+
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I appreciate the way this project pivoted my mindset to check and validate AI generated code and use codecheckers to ensure that the AI-generated code is functional and in-line with the original prompt/purpose.

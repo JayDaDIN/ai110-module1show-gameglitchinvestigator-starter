@@ -25,21 +25,17 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- The game is a number-guessing challenge where the player picks a difficulty level and tries to guess the hidden number within a set range and number of attempts.
+- The main bugs we found were reversed hints, inconsistent secret-state handling across reruns, and difficulty settings that did not match the actual game range or attempts.
+- We fixed the logic by moving the core rules into `logic_utils.py`, correcting the comparison logic, resetting session state properly, and validating the behavior with pytest.
 
-## 📸 Demo Walkthrough
+## Demo Walkthrough
 
-Describe your fixed game in numbered steps so a reader can follow along without watching a video:
-
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
-
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+1. The user opens the app and selects the Normal difficulty, which sets the valid guess range to 1 to 100.
+2. The user enters a guess of 40, and the game responds with "Too Low" because the secret number is higher than 40.
+3. The user then enters a guess of 70, and the game responds with "Too High" because the secret number is lower than 70.
+4. After each guess, the score updates correctly and the attempt count advances in the proper order.
+5. The user makes a final correct guess, the game shows the win message, and the round ends successfully.
 
 ## 🧪 Test Results
 
